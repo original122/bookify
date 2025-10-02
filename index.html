@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Business Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>AI Business Assistant</h1>
+    <section>
+        <h2>Send a Message</h2>
+        <form id="messageForm">
+            <label>Platform:
+                <select name="platform">
+                    <option value="email">Email</option>
+                    <option value="whatsapp">WhatsApp</option>
+                    <option value="sms">SMS</option>
+                </select>
+            </label><br>
+            <label>Sender Name: <input type="text" name="sender" required></label><br>
+            <label>Message: <input type="text" name="message" required></label><br>
+            <label>Language: <input type="text" name="language" value="en"></label><br>
+            <button type="submit">Send</button>
+        </form>
+        <div id="messageReply"></div>
+    </section>
+    <section>
+        <h2>Book Appointment</h2>
+        <form id="appointmentForm">
+            <label>Name: <input type="text" name="client_name" required></label><br>
+            <label>Phone: <input type="text" name="phone_number" required></label><br>
+            <label>Email: <input type="email" name="email" required></label><br>
+            <label>Country: <input type="text" name="country" required></label><br>
+            <label>Date & Time: <input type="datetime-local" name="datetime" required></label><br>
+            <label>Language: <input type="text" name="language" value="en"></label><br>
+            <button type="submit">Book</button>
+        </form>
+        <div id="appointmentReply"></div>
+    </section>
+    <section>
+        <h2>Make Payment</h2>
+        <form id="paymentForm">
+            <label>Name: <input type="text" name="client_name" required></label><br>
+            <label>Phone: <input type="text" name="phone_number" required></label><br>
+            <label>Email: <input type="email" name="email" required></label><br>
+            <label>Country: <input type="text" name="country" required></label><br>
+            <label>Amount: <input type="number" name="amount" required></label><br>
+            <label>Currency: <input type="text" name="currency" value="USD" required></label><br>
+            <label>Language: <input type="text" name="language" value="en"></label><br>
+            <button type="submit">Pay</button>
+        </form>
+        <div id="paymentReply"></div>
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
